@@ -1,16 +1,13 @@
 {
   "profile": {
     "name": "Parham Barazesh",
-    "title": "Software Engineer",
-    "location": "Tehran, Iran",
-    "email": "parham@example.com",
-    "website": "https://github.com/your-username",
+    "title": "Senior Software/Data Engineer",
+    "location": "Oslo, Norway",
+    "email": "parham.barazesh@gmail.com",
+    "website": "https://github.com/parhambrz",
     "photo": "",
-    "about": "I build reliable, user-focused software with a strong bias for clean architecture and measurable impact. I enjoy turning complex problems into clear product experiences and scalable systems.",
+    "about": "With over a decade of experience rooted in scientific programming, I specialize in architecting scalable, data-intensive software solutions for the Norwegian tech sector. My expertise lies at the intersection of Cloud-Native Architecture, Advanced Data Engineering, and Machine Learning. I bridge the gap between complex algorithmic challenges and production-grade software. From designing proprietary Master Data Management (MDM) platforms and Reverse ETL pipelines to engineering Computer Vision systems for infrastructure analysis, I build systems that turn raw data into strategic assets.",
     "highlights": [
-      "4+ years building web and cloud products",
-      "Strong focus on React, TypeScript, and modern frontend architecture",
-      "Experienced in API design, CI/CD, and quality engineering"
     ],
     "coreArchitecturalFocus": [
       {
@@ -30,11 +27,11 @@
         ]
       },
       {
-        "title": "Machine Learning Systems",
+        "title": "Scientific Computing & AI",
         "items": [
           "Model-enabled product features for real business impact",
-          "Practical MLOps and deployment workflows",
-          "Bridging algorithmic complexity with maintainable software"
+          "Geospatial analytics",
+          "Deep learning workflows"
         ]
       }
     ]
