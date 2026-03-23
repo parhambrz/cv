@@ -2,6 +2,7 @@
   "name": "cv",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://parhambrz.github.io/cv",
   "type": "module",
   "scripts": {
     "dev": "vite",
