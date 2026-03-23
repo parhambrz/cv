@@ -11,9 +11,6 @@ export default function AboutPage({ profile }) {
           <li key={highlight}>{highlight}</li>
         ))}
       </ul>
-      <a className="inline-cta" href={profile.website} target="_blank" rel="noreferrer">
-        Visit profile website
-      </a>
     </section>
   )
 }

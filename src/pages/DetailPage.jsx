@@ -49,8 +49,8 @@ function DetailPage({ section }) {
           ))}
         </div>
 
-        <Link className="back-link" to={`/${section}`}>
-          <ArrowLeft size={16} aria-hidden="true" /> Back to {section}
+        <Link className="back-link" to={`/${section}`} aria-label="Go back">
+          <ArrowLeft size={16} aria-hidden="true" /> Back
         </Link>
       </article>
     </section>
