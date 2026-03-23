@@ -1,4 +1,5 @@
 :root {
+  --ui-scale: 1.1;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -8,11 +9,23 @@
 }
 
 html {
-  font-size: 17.6px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
 #root {
-  min-height: 100vh;
+  min-height: calc(100vh / var(--ui-scale));
+  width: calc(100% / var(--ui-scale));
+  transform: scale(var(--ui-scale));
+  transform-origin: top left;
+}
+
+@supports (zoom: 1) {
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    transform: none;
+    zoom: var(--ui-scale);
+  }
 }
