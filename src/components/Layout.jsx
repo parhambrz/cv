@@ -66,7 +66,6 @@ function Layout({ children }) {
 
       <footer className="site-footer">
         <p>
-          Edit src/data/cv-data.json to update content, then run npm run rebuild.
         </p>
       </footer>
     </div>

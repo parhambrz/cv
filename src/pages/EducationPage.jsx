@@ -7,7 +7,7 @@ export default function EducationPage({ education }) {
       <SectionIntro
         eyebrow="Education"
         title="Academic timeline"
-        subtitle="Each education item has its own detail route, generated from data IDs."
+        subtitle=""
       />
       <div className="timeline-stack">
         {education.map((item, idx) => (

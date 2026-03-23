@@ -7,7 +7,7 @@ export default function ExperiencePage({ experience }) {
       <SectionIntro
         eyebrow="Experience"
         title="Professional timeline"
-        subtitle="Cards route to detailed pages generated dynamically from JSON data."
+        subtitle=""
       />
       <div className="timeline-stack">
         {experience.map((item, idx) => (

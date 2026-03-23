@@ -1,22 +1,17 @@
-import { UserRound } from 'lucide-react'
 import SectionIntro from '../components/SectionIntro'
 
 export default function AboutPage({ profile }) {
+  const fallbackPhoto = '/src/assets/profile.jpg'
+  const photoSrc = profile.photo?.trim() || fallbackPhoto
+
   return (
     <section className="panel hero-panel">
       <span className="hero-badge">Professional Profile</span>
       <SectionIntro eyebrow="About Me" title={profile.name} subtitle={profile.title} />
 
       <div className="about-layout">
-        <div className="about-photo-wrap" aria-label="Profile photo placeholder">
-          {profile.photo ? (
-            <img className="about-photo" src={profile.photo} alt={`${profile.name} profile`} />
-          ) : (
-            <div className="about-photo-placeholder" aria-hidden="true">
-              <UserRound size={36} />
-              <span>Photo Placeholder</span>
-            </div>
-          )}
+        <div className="about-photo-wrap" aria-label="Profile photo">
+          <img className="about-photo" src={photoSrc} alt={`${profile.name} profile`} />
         </div>
 
         <div className="about-content">

@@ -7,7 +7,7 @@ export default function SkillsPage({ skills }) {
       <SectionIntro
         eyebrow="Top Skills"
         title="Technical Strengths"
-        subtitle="Organized by major domains so you can add technologies under each section."
+        subtitle=""
       />
       <SkillGrid skills={skills} />
     </section>
