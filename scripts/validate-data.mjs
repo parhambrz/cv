@@ -52,8 +52,16 @@ function validateTimeline(items, type) {
     }
     ids.add(item.id)
 
-    if (!item.summary || !Array.isArray(item.details)) {
-      fail(`${type} item ${item.id} must include summary and details[]`)
+    const hasDetailText = typeof item.detailText === 'string' && item.detailText.trim().length > 0
+    const hasSummaryText = typeof item.summary === 'string' && item.summary.trim().length > 0
+    const hasDetailsList = Array.isArray(item.details) && item.details.length > 0
+
+    if (!hasDetailText && !hasSummaryText && !hasDetailsList) {
+      fail(`${type} item ${item.id} must include detailText, summary, or non-empty details[]`)
+    }
+
+    if (item.details !== undefined && !Array.isArray(item.details)) {
+      fail(`${type} item ${item.id} details must be an array when provided`)
     }
   }
 }

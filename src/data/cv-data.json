@@ -91,15 +91,14 @@
     {
       "id": "universitetet-i-stavanger",
       "school": "University of Stavanger",
-      "degree": "BSc in Engineering",
+      "degree": "M.Sc. in Engineering",
       "start": "2017",
       "end": "2020",
       "location": "Stavanger, Norway",
       "summary": "",
+      "detailText": "I have studied in the University of Stavanger, UiS, through academic years 2017-2020 in M.Sc. of Petroleum Well Engineering with minor in Drilling Automation. I have worked on my Master thesis research in flow dynamics modelling under supervision of Dr. Tore Flåtten. I have researched and developed a scientific code to numerically solve a system of hyperbolic conservation laws (Isothermal and Full Euler model) for fluid flow in well and pipelines.",
       "details": [
-        "Graduated with a strong focus on practical software engineering.",
-        "Led a capstone project on real-time data processing.",
-        "Contributed to student engineering communities and peer mentoring."
+        "Thesis: Numerical modelling of temperature-dependent flow dynamics in drilling operations"
       ],
       "tags": ["Algorithms", "Data Structures", "Distributed Systems"]
     }
@@ -113,6 +112,7 @@
       "end": "Present",
       "location": "Remote",
       "summary": "Built performant product interfaces and improved core user journeys.",
+      "detailText": "Driving end-to-end product improvements from architecture to delivery, with focus on maintainability, performance, and measurable user impact.",
       "details": [
         "Redesigned key dashboard flows and reduced interaction steps by 30%.",
         "Introduced component architecture and design tokens to improve UI consistency.",
@@ -128,6 +128,7 @@
       "end": "2022-12",
       "location": "Tehran, Iran",
       "summary": "Developed full-stack features and integrations for enterprise clients.",
+      "detailText": "Delivered enterprise-facing features with strong coordination across product, design, and backend teams.",
       "details": [
         "Delivered multiple API integrations with external providers.",
         "Improved frontend bundle strategy for faster first-load performance.",

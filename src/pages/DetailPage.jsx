@@ -16,6 +16,8 @@ function DetailPage({ section }) {
   const title = section === 'education' ? item.school : item.company
   const subtitle = section === 'education' ? item.degree : item.role
   const tags = section === 'education' ? item.tags : item.tech
+  const detailText = item.detailText || item.summary
+  const detailPoints = Array.isArray(item.details) ? item.details : []
 
   return (
     <section>
@@ -33,21 +35,25 @@ function DetailPage({ section }) {
           </p>
         </div>
 
-        <p className="detail-summary">{item.summary}</p>
+        {detailText ? <p className="detail-summary">{detailText}</p> : null}
 
-        <ul className="bullet-list detail-bullets">
-          {item.details.map((line) => (
-            <li key={line}>{line}</li>
-          ))}
-        </ul>
+        {detailPoints.length > 0 ? (
+          <ul className="bullet-list detail-bullets">
+            {detailPoints.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
+        ) : null}
 
-        <div className="tag-wrap">
-          {tags.map((tag) => (
-            <span className="tag" key={tag}>
-              {tag}
-            </span>
-          ))}
-        </div>
+        {Array.isArray(tags) && tags.length > 0 ? (
+          <div className="tag-wrap">
+            {tags.map((tag) => (
+              <span className="tag" key={tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null}
 
         <Link className="back-link" to={`/${section}`} aria-label="Go back">
           <ArrowLeft size={16} aria-hidden="true" /> Back
