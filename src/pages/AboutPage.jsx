@@ -1,7 +1,8 @@
 import SectionIntro from '../components/SectionIntro'
+import defaultProfilePhoto from '../assets/profile.jpg'
 
 export default function AboutPage({ profile }) {
-  const fallbackPhoto = './assets/profile.jpg'
+  const fallbackPhoto = defaultProfilePhoto
   const photoSrc = profile.photo?.trim() || fallbackPhoto
 
   return (
