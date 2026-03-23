@@ -1,0 +1,44 @@
+# Personal CV Website (React + Static)
+
+This is a static React CV website designed for GitHub Pages.
+
+## Key Features
+- Data-driven CV content from one JSON file.
+- About, Top Skills, Education, and Experience sections.
+- Dynamic detail pages for each education and experience item.
+- Polished UI with iconography and motion.
+
+## Edit Your Content
+Update this file only:
+
+`src/data/cv-data.json`
+
+You can change profile text, skills, education, and experience data without editing React components.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Rebuild Script
+
+```bash
+npm run rebuild
+```
+
+This runs `scripts/rebuild.sh` and outputs the static site to `dist/`.
+
+## GitHub Pages Deployment
+- Workflow file: `.github/workflows/deploy.yml`
+- Trigger: push to `main`
+- Output folder: `dist/`
+
+If Pages is not active yet, enable GitHub Pages in repository settings and choose GitHub Actions as the source.
