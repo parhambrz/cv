@@ -12,19 +12,23 @@ const navItems = [
 
 function Layout({ children }) {
   const location = useLocation()
+  const socials = cvData.socials ?? []
 
   return (
     <div className="site-shell">
-      <div className="bg-orb orb-a" aria-hidden="true" />
-      <div className="bg-orb orb-b" aria-hidden="true" />
+      <div className="bg-glow bg-glow-a" aria-hidden="true" />
+      <div className="bg-glow bg-glow-b" aria-hidden="true" />
 
-      <header className="topbar">
-        <Link className="brand" to="/">
-          <span className="brand-dot" aria-hidden="true" />
-          {cvData.profile.name}
-        </Link>
+      <header className="site-header">
+        <div>
+          <p className="site-kicker">Curriculum Vitae</p>
+          <h1>
+            <Link to="/">{cvData.profile.name}</Link>
+          </h1>
+          <p className="site-title">{cvData.profile.title}</p>
+        </div>
 
-        <nav aria-label="Main navigation">
+        <nav className="site-nav" aria-label="Main navigation">
           <ul className="nav-list">
             {navItems.map(({ to, label, icon: Icon }) => (
               <li key={to}>
@@ -36,6 +40,18 @@ function Layout({ children }) {
             ))}
           </ul>
         </nav>
+
+        <div className="header-contact">
+          <p>{cvData.profile.location}</p>
+          <a href={`mailto:${cvData.profile.email}`}>{cvData.profile.email}</a>
+          <div className="social-links">
+            {socials.map((social) => (
+              <a key={social.label} href={social.url} target="_blank" rel="noreferrer">
+                {social.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </header>
 
       <motion.main
@@ -50,8 +66,7 @@ function Layout({ children }) {
 
       <footer className="site-footer">
         <p>
-          Built with React and static data for easy updates. Edit
-          <strong> src/data/cv-data.json</strong> and rebuild.
+          Edit src/data/cv-data.json to update content, then run npm run rebuild.
         </p>
       </footer>
     </div>
