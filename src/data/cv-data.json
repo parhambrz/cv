@@ -41,10 +41,13 @@
       "domain": "Software Development",
       "icon": "Code2",
       "items": [
-        "Python, C#, JavaScript/TypeScript",
-        "Web APIs and microservice architecture",
-        "Cloud application development",
-        "Containerization with Docker and Kubernetes"
+        "Python, C#, and database design (relational and non-relational)",
+        "Cloud development across Azure, GCP, and AWS",
+        "Web technologies: HTML, CSS, JavaScript, Bootstrap, React, Django, ASP.NET",
+        "Web APIs: Django REST Framework, Flask, FastAPI",
+        "Microservice architecture",
+        "Containerization with Docker and Kubernetes",
+        "CI/CD pipeline design and implementation"
       ]
     },
     {
@@ -52,40 +55,47 @@
       "icon": "Database",
       "items": [
         "Data platforms and warehousing",
-        "ETL / ELT orchestration",
-        "Streaming and messaging patterns",
-        "SQL and NoSQL data modeling"
+        "ETL / ELT and orchestration",
+        "Big data processing",
+        "Databases, streaming, and messaging",
+        "Apache Spark, Airflow, and Kafka",
+        "Snowflake, SQL, and NoSQL",
+        "Docker and Kubernetes for data workloads",
+        "Python for data engineering workflows"
       ]
     },
     {
       "domain": "Data Science",
       "icon": "Brain",
       "items": [
+        "Python and MATLAB",
         "Supervised and unsupervised learning",
-        "Python scientific stack",
-        "Deep learning workflows",
-        "Data visualization and analysis"
+        "NumPy, Pandas, and scikit-learn",
+        "SciPy",
+        "ANN and CNN",
+        "Big data analysis",
+        "Data visualization with Matplotlib, D3.js, and Plotly"
       ]
     },
     {
       "domain": "Numerical Simulation",
       "icon": "Sigma",
       "items": [
+        "MATLAB and Python",
         "Mathematical modeling",
-        "Differential equation driven simulation",
-        "Scientific computing with Python and MATLAB"
+        "Differential equations"
       ]
     }
   ],
   "education": [
     {
-      "id": "edu-sharif-bs",
-      "school": "Sharif University of Technology",
-      "degree": "BSc in Computer Engineering",
-      "start": "2017-09",
-      "end": "2021-06",
-      "location": "Tehran, Iran",
-      "summary": "Focused on software engineering fundamentals, algorithms, and distributed systems.",
+      "id": "universitetet-i-stavanger",
+      "school": "University of Stavanger",
+      "degree": "BSc in Engineering",
+      "start": "2017",
+      "end": "2020",
+      "location": "Stavanger, Norway",
+      "summary": "",
       "details": [
         "Graduated with a strong focus on practical software engineering.",
         "Led a capstone project on real-time data processing.",
