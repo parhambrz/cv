@@ -98,47 +98,173 @@
       "summary": "",
       "detailText": "I have studied in the University of Stavanger, UiS, through academic years 2017-2020 in M.Sc. of Petroleum Well Engineering with minor in Drilling Automation. I have worked on my Master thesis research in flow dynamics modelling under supervision of Dr. Tore Flåtten. I have researched and developed a scientific code to numerically solve a system of hyperbolic conservation laws (Isothermal and Full Euler model) for fluid flow in well and pipelines.",
       "details": [
-        "Thesis: Numerical modelling of temperature-dependent flow dynamics in drilling operations"
+        "Thesis: Numerical modelling of temperature-dependent flow dynamics in drilling operations",
+        "Link: https://uis.brage.unit.no/uis-xmlui/handle/11250/2633835"
       ],
-      "tags": ["Algorithms", "Data Structures", "Distributed Systems"]
+      "tags": ["Algorithms", "Matlab", "Python", "Numerical Simulation"]
     }
   ],
   "experience": [
     {
-      "id": "exp-company-a",
-      "company": "Company A",
-      "role": "Frontend Engineer",
+      "id": "exp-bouvet",
+      "company": "Bouvet ASA",
+      "role": "Senior Software/Data Engineer",
       "start": "2023-01",
       "end": "Present",
-      "location": "Remote",
-      "summary": "Built performant product interfaces and improved core user journeys.",
-      "detailText": "Driving end-to-end product improvements from architecture to delivery, with focus on maintainability, performance, and measurable user impact.",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
       "details": [
-        "Redesigned key dashboard flows and reduced interaction steps by 30%.",
-        "Introduced component architecture and design tokens to improve UI consistency.",
-        "Implemented test coverage improvements and CI checks for release stability."
+        "Architected complex data integration pipelines utilizing Sesam’s proprietary delta-stream engine, optimizing for Change Data Capture (CDC) to minimize processing overhead and ensure low-latency synchronization.",
+        "Designed and implemented dynamic, graph-like data models to unify heterogeneous sources, creating a semantic layer that decoupled raw data structures from downstream analytical consumption.",
+        "Developed automated logic for data deduplication and reconciliation, ensuring a \"Single Source of Truth\" (SSOT) across distributed ERP and CRM landscapes.",
+        "Architected real-time ingestion topologies using Confluent Cloud (Kafka) and Azure Event Hubs to buffer high-velocity telemetry before processing, decoupling producers from consumers.",
+        "Deployed and managed Apache Airflow Directed Acyclic Graphs (DAGs) to handle complex, dependency-driven data transformations that extended beyond the native capabilities of the core platform.",
+        "Collaborated on Semarchy xDM implementations to enforce strict data governance policies and reference data management alongside the streaming hub.",
+        "Orchestrated high-volume Reverse ETL pipelines using Azure Data Factory, extracting enriched datasets from Snowflake and pushing them back into operational ERP and CRM systems to drive real-time business actions."
       ],
-      "tech": ["React", "TypeScript", "Jest", "GitHub Actions"]
+      "tech": ["Python", "Snowflake", "Snowpark", "ETL/ELT","Data Pipeline", "Orchestration", "DLT Hub", "Data Platform", "Miro", "Data Engineering"]
     },
     {
-      "id": "exp-company-b",
-      "company": "Company B",
-      "role": "Software Engineer",
-      "start": "2021-07",
-      "end": "2022-12",
-      "location": "Tehran, Iran",
-      "summary": "Developed full-stack features and integrations for enterprise clients.",
-      "detailText": "Delivered enterprise-facing features with strong coordination across product, design, and backend teams.",
+      "id": "exp-sesam",
+      "company": "Bouvet/Sesam",
+      "role": "Senior Software/Data Engineer",
+      "start": "2023-01",
+      "end": "2025-01",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
       "details": [
-        "Delivered multiple API integrations with external providers.",
-        "Improved frontend bundle strategy for faster first-load performance.",
-        "Collaborated with product and design teams to define release scope."
+        "Engineered core components for a semantic Master Data Management based on delta-stream processing, moving beyond traditional batch ETL to enable real-time data consistency across heterogeneous ecosystems.",
+        "Developed and optimized high-throughput Python backend services, adhering to Test-Driven Development (TDD) to ensure reliability within a complex, distributed architecture.",
+        "Managed the application lifecycle on Azure Kubernetes Service (AKS) and on-premise clusters, utilizing advanced logging and diagnostics to drive stability and efficiency in production environments.",
+        "Led the architectural redesign of a multi-tenant synchronization service to resolve scalability bottlenecks caused by rapid user growth and increasing data volumes.",
+        "Designed a centralized Token Manager service to handle complex authorization flows, managing OAuth token lifecycles and refresh logic for external system integration.",
+        "Built critical support services including a Health Service for real-time tenant monitoring and a Bootstrapper to ensure automated, consistent deployment of high-level configurations across the cluster.",
+        "Refactored and unified the system’s API surface, enforcing strict design patterns to improve testability, maintainability, and seamless frontend integration.",
+        "Architected and maintained a Python-based Command Line Interface (CLI) used by consultants for configuration management, authentication, and environment execution.",
+        "Developed a modular connector architecture to facilitate rapid integration with third-party ERP/CRM systems, ensuring code reusability and protocol abstraction.",
+        "Implemented scripting automation (e.g., commit hash updaters) to eliminate manual overhead in deployment pipelines and ensure configuration parity across environments."
       ],
-      "tech": ["React", "Node.js", "PostgreSQL", "Docker"]
+      "tech": ["Python", "Flask", "Sesam", "Data Integration", "Master Data Management", "Docker", "Kubernetes", "Azure", "Authentication", "TDD", "Microservices", "API Design", "TeamCity", "GitHub Actions", "Git", "Bash"]
+    },
+    {
+      "id": "exp-dolittle",
+      "company": "Dolittle",
+      "role": "Software Engineer/Data Scientist",
+      "start": "2021-04",
+      "end": "2023-01",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "Engineered a real-time integration bridge between Dolittle Studio and complex M3 ERP environments, orchestrating the ingestion and normalization of high-throughput business telemetry.",
+        "Architected the frontend data layer for the Studio platform, a centralized operations console designed to abstract complex Kubernetes primitives, giving teams direct control over container lifecycles and artifact registries.",
+        "Designed the underlying data structures to transform raw ERP streams into actionable business intelligence, ensuring data consistency across distributed viewing components.",
+        "Developed an automated AIOps solution leveraging Prometheus time-series data to conduct real-time anomaly detection, moving system monitoring from reactive alerting to proactive incident mitigation.",
+        "Operationalized machine learning algorithms and statistical heuristics to establish dynamic baselines for system health, predicting potential outages and resource bottlenecks before they occurred.",
+        "Defined and maintained the alerting topology and query logic (PromQL), directly influencing system stability and minimizing Mean Time to Detect (MTTD) for critical infrastructure."
+      ],
+      "tech": ["Python", "C#", "TypeScript", "ASP.NET Core", "MongoDB", "Docker", "Kubernetes", "Azure", "LINQ", "Grafana", "Prometheus", "Event Driven Architecture", "Power BI"]
+    },
+    {
+      "id": "exp-factory-mind",
+      "company": "Factory Mind",
+      "role": "Software/Data Engineer",
+      "start": "2020-07",
+      "end": "2021-04",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "Architected and developed a decoupled, microservices-based platform using Django and JavaScript, ensuring modularity and high scalability across the stack.",
+        "Designed a production-grade deployment strategy on Azure, utilizing Docker containerization and Kubernetes orchestration to manage resources and ensure high availability, backed by Azure PostgreSQL.",
+        "Engineered an Industrial IoT (IIoT) simulation environment utilizing OPC UA protocols to generate high-fidelity time-series data, driving a Machine Learning pipeline for 24-hour look-ahead failure prediction.",
+        "Developed a modular ETL and notification engine, establishing seamless interoperability between heterogeneous data sinks (BigQuery, Synapse, MongoDB) and collaboration platforms (Slack, Teams)."
+      ],
+      "tech": ["Python", "JavaScript", "Django", "PostgreSQL", "Google BigQuery", "MongoDB", "Azure Synapse Analytics", "Docker", "Kubernetes", "Azure", "Data Analytics", "Git"]
+    },
+    {
+      "id": "exp-il",
+      "company": "Intellectual Labs",
+      "role": "Software Developer/Data Scientist",
+      "start": "2020-01",
+      "end": "2021-04",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "Intellectual Labs is a Norwegian tech company working on developing AI solutions to the industrial projects. We have the ambition to co-create with our partners and not to be ordinary consultants. IL takes lead on the AI development in your next generation product, in a strong collaborative partnership.",
+      "details": [
+        "Architected a scalable spatio-temporal analytics engine processing high-volume cellular telemetry and geospatial topologies to model population dynamics and mobility trends.",
+        "Engineered an end-to-end Computer Vision pipeline utilizing Deep Learning (CNN, Keras, TensorFlow) on aerial drone imagery for automated road infrastructure auditing and pavement distress detection.",
+        "Designed the architecture for an NLP-driven Decision Support System, implementing semantic analysis and recommendation algorithms to deliver contextual market intelligence to enterprise users."
+      ],
+      "tech": ["Python", "MongoDB", "Docker", "Kubernetes", "Azure", "Azure Synapse Analytics", "Keras", "TensorFlow", "Google Maps", "OSM", "Kepler.gl", "Data Science", "Computer Vision", "NLP"]
+    },
+    {
+      "id": "exp-integrate-renewables",
+      "company": "Integrate Renewables",
+      "role": "Software Developer",
+      "start": "2018-06",
+      "end": "2021-04",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "Developed a .NET web app to manage customer data from the Elhub web service."
+      ],
+      "tech": ["C#", "ASP.NET", "Soap Web Services"]
+    },
+    {
+      "id": "exp-prowellplan",
+      "company": "Prowellplan",
+      "role": "Software Developer",
+      "start": "2018-06",
+      "end": "2021-04",
+      "location": "Oslo, Norway",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "oriented programming the backend modules for PWP software.",
+        "Develop the prediction and optimization of the rate of penetration (ROP) and hole cleaning efficiency modules with AI and nonlinear programming from the drilling data stream.",
+        "Testing"
+      ],
+      "tech": ["Python", "Nonlinear Programming", "Docker", "Azure", "Git", "Testing"]
+    },
+    {
+      "id": "exp-drillbotics",
+      "company": "Drillbotics",
+      "role": "Scientific Developer",
+      "start": "2017-11",
+      "end": "2018-06",
+      "location": "Stavanger, Norway",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "Sensor implementation and design of the Microcontroller (Arduino Uno and Due).",
+        "Real-time modelling of the drill string vibration from sensor data.",
+        "Develop a standalone application to animate the vibration."
+      ],
+      "tech": ["Python", "Matlab", "Nonlinear Programming", "Arduino", "Real-time Modelling", "Data Visualization"]
+    },
+    {
+      "id": "exp-put",
+      "company": "Petroleum University of Technology",
+      "role": "Programming and Modeling Instructor",
+      "start": "2009-02",
+      "end": "2012-05",
+      "location": "Ahwaz, Iran",
+      "summary": "",
+      "detailText": "",
+      "details": [
+        "Taught programming and numerical modeling courses to undergraduate students.",
+        "Designed and implemented course materials and assignments focused on practical applications of programming in engineering contexts.",
+        "Supervised student projects involving the development of computational models."
+      ],
+      "tech": ["Matlab", "Numerical Modelling", "Analytical Problem Solving"]
     }
   ],
   "socials": [
-    { "label": "GitHub", "url": "https://github.com/your-username" },
-    { "label": "LinkedIn", "url": "https://linkedin.com/in/your-profile" }
+    { "label": "GitHub", "url": "https://github.com/parhambrz" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/parham-barazesh-b908256b" }
   ]
 }
