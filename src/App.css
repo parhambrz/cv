@@ -211,6 +211,82 @@ a {
   max-width: 72ch;
 }
 
+.about-layout {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.about-photo-wrap {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: var(--radius-md);
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.about-photo-placeholder {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+  color: #596176;
+  font-weight: 600;
+}
+
+.about-content {
+  min-width: 0;
+}
+
+.core-focus {
+  margin-top: 1rem;
+}
+
+.core-focus h3 {
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  font-size: 1.05rem;
+  color: #2f384b;
+  margin-bottom: 0.72rem;
+}
+
+.core-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.core-focus-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-md);
+  padding: 0.7rem 0.78rem;
+}
+
+.core-focus-card h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #313a4e;
+}
+
+.core-focus-card ul {
+  margin: 0.56rem 0 0;
+  padding-left: 0.95rem;
+  display: grid;
+  gap: 0.36rem;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
 .section-header {
   margin-bottom: 1rem;
 }
@@ -255,7 +331,33 @@ a {
 .skills-grid {
   display: grid;
   gap: 0.72rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+}
+
+.skill-domain-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.62);
+  padding: 0.9rem 0.95rem;
+}
+
+.skill-domain-head {
+  display: flex;
+  align-items: center;
+  gap: 0.64rem;
+  margin-bottom: 0.65rem;
+}
+
+.skill-domain-head h3 {
+  font-size: 1.08rem;
+}
+
+.skill-item-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--ink-muted);
+  display: grid;
+  gap: 0.35rem;
 }
 
 .skill-pill {
@@ -454,6 +556,22 @@ a {
 
   .header-contact {
     align-items: flex-start;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-wrap {
+    min-height: 220px;
+  }
+
+  .about-photo {
+    min-height: 220px;
+  }
+
+  .core-focus-grid {
+    grid-template-columns: 1fr;
   }
 }
 

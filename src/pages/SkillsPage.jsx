@@ -6,8 +6,8 @@ export default function SkillsPage({ skills }) {
     <section className="panel">
       <SectionIntro
         eyebrow="Top Skills"
-        title="Technical strengths"
-        subtitle="Change any skill in cv-data.json and rebuild; no component edits required."
+        title="Technical Strengths"
+        subtitle="Organized by major domains so you can add technologies under each section."
       />
       <SkillGrid skills={skills} />
     </section>

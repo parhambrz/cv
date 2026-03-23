@@ -5,22 +5,80 @@
     "location": "Tehran, Iran",
     "email": "parham@example.com",
     "website": "https://github.com/your-username",
+    "photo": "",
     "about": "I build reliable, user-focused software with a strong bias for clean architecture and measurable impact. I enjoy turning complex problems into clear product experiences and scalable systems.",
     "highlights": [
       "4+ years building web and cloud products",
       "Strong focus on React, TypeScript, and modern frontend architecture",
       "Experienced in API design, CI/CD, and quality engineering"
+    ],
+    "coreArchitecturalFocus": [
+      {
+        "title": "Cloud-Native Systems",
+        "items": [
+          "Designing resilient microservices and distributed systems",
+          "Containerized workloads with Docker and Kubernetes",
+          "Production-ready CI/CD and observability"
+        ]
+      },
+      {
+        "title": "Data Engineering",
+        "items": [
+          "High-throughput ETL and Reverse ETL pipelines",
+          "Event-driven data integrations",
+          "Reliable data platform architecture for analytics"
+        ]
+      },
+      {
+        "title": "Machine Learning Systems",
+        "items": [
+          "Model-enabled product features for real business impact",
+          "Practical MLOps and deployment workflows",
+          "Bridging algorithmic complexity with maintainable software"
+        ]
+      }
     ]
   },
   "skills": [
-    { "name": "React", "level": "Expert", "icon": "Code2" },
-    { "name": "TypeScript", "level": "Advanced", "icon": "Braces" },
-    { "name": "JavaScript", "level": "Expert", "icon": "FileCode2" },
-    { "name": "Node.js", "level": "Advanced", "icon": "Server" },
-    { "name": "REST APIs", "level": "Advanced", "icon": "Network" },
-    { "name": "CI/CD", "level": "Advanced", "icon": "Workflow" },
-    { "name": "Testing", "level": "Advanced", "icon": "BadgeCheck" },
-    { "name": "Git", "level": "Expert", "icon": "GitBranch" }
+    {
+      "domain": "Software Development",
+      "icon": "Code2",
+      "items": [
+        "Python, C#, JavaScript/TypeScript",
+        "Web APIs and microservice architecture",
+        "Cloud application development",
+        "Containerization with Docker and Kubernetes"
+      ]
+    },
+    {
+      "domain": "Data Engineering",
+      "icon": "Database",
+      "items": [
+        "Data platforms and warehousing",
+        "ETL / ELT orchestration",
+        "Streaming and messaging patterns",
+        "SQL and NoSQL data modeling"
+      ]
+    },
+    {
+      "domain": "Data Science",
+      "icon": "Brain",
+      "items": [
+        "Supervised and unsupervised learning",
+        "Python scientific stack",
+        "Deep learning workflows",
+        "Data visualization and analysis"
+      ]
+    },
+    {
+      "domain": "Numerical Simulation",
+      "icon": "Sigma",
+      "items": [
+        "Mathematical modeling",
+        "Differential equation driven simulation",
+        "Scientific computing with Python and MATLAB"
+      ]
+    }
   ],
   "education": [
     {

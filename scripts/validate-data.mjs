@@ -5,7 +5,15 @@ function fail(message) {
   process.exit(1)
 }
 
-const requiredProfile = ['name', 'title', 'location', 'email', 'about', 'highlights']
+const requiredProfile = [
+  'name',
+  'title',
+  'location',
+  'email',
+  'about',
+  'highlights',
+  'coreArchitecturalFocus',
+]
 for (const key of requiredProfile) {
   if (!data.profile?.[key]) {
     fail(`profile.${key} is required`)
@@ -14,6 +22,18 @@ for (const key of requiredProfile) {
 
 if (!Array.isArray(data.skills) || data.skills.length === 0) {
   fail('skills must be a non-empty array')
+}
+
+for (const group of data.skills) {
+  if (!group.domain || !Array.isArray(group.items) || group.items.length === 0) {
+    fail('each skills item must include domain and non-empty items[]')
+  }
+}
+
+for (const focus of data.profile.coreArchitecturalFocus) {
+  if (!focus.title || !Array.isArray(focus.items) || focus.items.length === 0) {
+    fail('each profile.coreArchitecturalFocus item must include title and non-empty items[]')
+  }
 }
 
 if (!Array.isArray(data.education) || !Array.isArray(data.experience)) {
