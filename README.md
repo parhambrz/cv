@@ -1,6 +1,6 @@
 # Personal CV Website (React + Static)
 
-This is a static React CV website designed for GitHub Pages.
+This is a static React CV website designed for GitHub Pages. visit https://parhambrz.github.io/cv
 
 ## Key Features
 - Data-driven CV content from one JSON file.
